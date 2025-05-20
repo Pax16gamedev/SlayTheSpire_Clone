@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1366 height=768 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -55,13 +55,13 @@
       var loaderUrl = buildUrl + "/SlayTheSpire_Clone.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/SlayTheSpire_Clone.data.br",
-        frameworkUrl: buildUrl + "/SlayTheSpire_Clone.framework.js.br",
-        codeUrl: buildUrl + "/SlayTheSpire_Clone.wasm.br",
+        dataUrl: buildUrl + "/SlayTheSpire_Clone.data.unityweb",
+        frameworkUrl: buildUrl + "/SlayTheSpire_Clone.framework.js.unityweb",
+        codeUrl: buildUrl + "/SlayTheSpire_Clone.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "DefaultCompany",
+        companyName: "pax16.gamedev",
         productName: "SlayTheSpire_Clone",
-        productVersion: "0.0.2",
+        productVersion: "0.0.3",
         showBanner: unityShowBanner,
       };
 
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1366px";
+        canvas.style.height = "768px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
